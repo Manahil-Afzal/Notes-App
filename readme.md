@@ -24,7 +24,7 @@ It allows users to create, edit, delete, and manage rich-text notes with colors,
 - React.js
 - Vite
 - Axios
-- CSS (Custom Styling)
+- CSS 
 
 ## ⚙️ Backend
 - Node.js
@@ -195,7 +195,6 @@ Create `.env` in server:
 MONGO_URI=your_mongodb_connection_string
 PORT=5000
 ```
-
 
 ---
 
