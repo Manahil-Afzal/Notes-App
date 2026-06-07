@@ -228,11 +228,6 @@ MONGO_URI=your_mongodb_connection_string
 PORT=5000
 ```
 
----
-
-# 👨‍💻 Author
-
-Built as a full-stack learning project using MERN stack.
 
 ---
 
