@@ -99,38 +99,6 @@ ODM for MongoDB.
 
 ---
 
-## 🏗️ System Architecture
-
-```mermaid
-flowchart TD
-
-User[User] --> UI[React Frontend (Vite)]
-
-UI --> Pages[Pages Layer]
-Pages --> Home[Home.jsx]
-
-UI --> Components[Components Layer]
-Components --> Editor[NoteEditor]
-Components --> List[NotesList]
-Components --> Card[NoteCard]
-Components --> Sidebar[Sidebar]
-
-UI --> API[Axios API Layer]
-
-API --> Server[Express Backend]
-
-Server --> Routes[noteRoutes.js]
-Routes --> Controller[noteController.js]
-
-Controller --> Model[Note Model (Mongoose)]
-
-Model --> DB[(MongoDB Atlas)]
-
-DB --> Controller
-Controller --> Server
-Server --> API
-API --> UI
-```
 
 # 🔄 How It Works
 
