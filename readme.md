@@ -99,7 +99,7 @@ ODM for MongoDB.
 
 ---
 
-# 🏗️ System Architecture
+## 🏗️ System Architecture
 
 ```mermaid
 flowchart TD
@@ -131,8 +131,6 @@ Controller --> Server
 Server --> API
 API --> UI
 ```
-
----
 
 # 🔄 How It Works
 
