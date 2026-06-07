@@ -1,0 +1,23 @@
+/* Keep this file minimal: template styles were affecting the Notes App layout.
+   The Notes App uses its own flex layout in App.css (.app, .sidebar, .notes-list, .editor). */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f5f5f5;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: initial;
+  border: none;
+  display: block;
+}
+

@@ -1,0 +1,85 @@
+/* 3D link insert card */
+.link-card-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  padding: 24px;
+}
+
+.link-card {
+  width: min(520px, 100%);
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 22px;
+  position: relative;
+
+  transform-style: preserve-3d;
+  perspective: 900px;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.35),
+    0 2px 0 rgba(255, 255, 255, 0.4) inset;
+}
+
+.link-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 24px;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0)
+  );
+  transform: translateZ(-1px);
+  pointer-events: none;
+}
+
+.link-input {
+  width: 100%;
+  padding: 14px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  outline: none;
+  font-size: 16px;
+}
+
+.link-input:focus {
+  border-color: rgba(17, 17, 17, 0.35);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.06);
+}
+
+.link-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.link-btn {
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  background: #111;
+  color: #fff;
+}
+
+.link-btn:hover {
+  filter: brightness(0.95);
+}
+
+.link-btn-primary {
+  background: #111;
+}
+
+.link-btn:not(.link-btn-primary) {
+  background: #f2f2f2;
+  color: #111;
+}
+
